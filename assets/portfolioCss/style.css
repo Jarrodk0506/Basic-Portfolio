@@ -6,8 +6,17 @@ body{
 
 }
 
-
 .container-fluid{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+    width:100%;
+    
+}
+
+.container.second{
     background: #ffffff;
     width: 75%;
     margin: 0 auto;
@@ -59,7 +68,7 @@ h1{
     background: #4aaaa5;
     color:#eee;
     left: 175px;
-    bottom: 0;
+    bottom: -8px;
     padding: 25px 0;
     width: 200px;
     text-align: center;
@@ -157,7 +166,17 @@ a:hover{
 
 
 nav{
+    position: absolute;
     float: right;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    bottom: 25px;
+}
+
+a{
+    color: #777777;
 }
 
 input[type=text], textarea {
@@ -205,3 +224,17 @@ input[type=text], textarea {
     text-align: center;
 }
     
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
